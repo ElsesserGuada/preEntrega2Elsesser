@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    background-color: bisque;
+
+}
+
+ Header
+
+header {
+    width: 100%;
+   border-bottom: 1px solid ;
+    text-align: center;
+    padding: auto; 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: #a0fb0e ;
+
+    position:sticky;
+    top: 0;
+} 
+
+  /* .logo {
+    width: 400px; 
+
+     width:250px;
+    cursor: pointer;  
+}  */
+
+/* BARRA DE NAVEGACION Y MENU HAMBURGUESA */
+
+.barra {
+    background-color : #138D75 ;
+}
+
+.fuentesNav {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fuentesNav a:hover {
+    background-color:#239B56 ;
+    color: #138D75;
+   
+}
+
+
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 2.5rem;
+    
+    
+
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+/* Main */
+
+main {
+    
+margin: 20px;
+padding: 20px;
+}
+
+h1 ,
+h2 {
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    margin: 0rem;
+    padding: 10px;
+    text-align: center;
+    background-color: #138D75;
+}
+
+
+
+/* Catalogo productos*/
+/* CARDS */
+/* Aplico GRID Y FLEX */
+ 
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.babyProducto {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#F9E79F ;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0,0, 0, 0.1)
+}
+
+.productoImagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: contain;
+} 
+
+.productoTipo {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10 px;
+}
+
+.productoDescripcion {
+font-size: 1rem;
+text-align: center;
+margin-bottom: 20px;
+
+}
+
+.productoPrecio {
+    color: #000080;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #ABEBC6 ;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Iframe */
+
+.contenedorUbi {
+    width: 100%;
+    height: auto;
+    
+
+}
+.contenedorUbi iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* Talles */
+
+.contenedorTalles {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.imgTalles {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorTalles p {
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Formulario */
+
+form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnFormulario {
+    background-color: cornflowerblue;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* responsive */
+
+
+@media (max-width: 775px) {
+    .contenedorProductos{
+        display: flex;
+        flex-direction: column;
+      }
+
+}
+@media (max-width: 320px){
+.menu{
+    display: flex;
+    flex-direction: column; 
+}
+.menu img {
+    padding-bottom: 1.25rem;
+    display: flex;
+    align-self: center;
+}
+}
+
+
