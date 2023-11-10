@@ -1,11 +1,13 @@
-@media (max-width: 775px) {
+ @media (max-width: 775px){
     .contenedorProductos{
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction:column;
       }
+      
 
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
 .menu{
     display: flex;
     flex-direction: column; 
