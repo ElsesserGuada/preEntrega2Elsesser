@@ -1,0 +1,55 @@
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.babyProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:$color-marron;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productoImagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.productoTipo {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10 px;
+}
+
+.productoDescripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productoPrecio {
+    color:$color-amarillo;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:$color-verde;
+    color:$color-bordo;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
