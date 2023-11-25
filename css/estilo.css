@@ -80,7 +80,7 @@ a {
 
 button {
   padding: 10px 20px;
-  background-color: #A8DF8E;
+  background: radial-gradient(#A8DF8E ,#239B56);
   color: #7E1717;
   font-size: 1rem;
   font-weight: bold;
@@ -131,10 +131,19 @@ footer {
 
 @media (max-width: 775px) {
   .contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 320px){
+  .contenedorProductos {
     display: flex;
     flex-direction: column;
   }
 }
+
 @media (max-width: 320px) {
   .menu {
     display: flex;
@@ -195,5 +204,6 @@ h1, h2 {
   background-color: #239B56;
   color: #138D75;
 }
+
 
 /*# sourceMappingURL=estilo.css.map */
